@@ -1,0 +1,41 @@
+@use "variables" as v;
+.header {
+  position: relative;
+  padding: 27px 0 119px;
+  background: linear-gradient(225deg, #ffee32 0%, #d6d6d6 100%);
+  &__black {
+    background-color: v.$color-black;
+    position: sticky;
+    top: 0;
+  }
+  &__wraper {
+    padding: 18px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 376px;
+  }
+  &__navigation {
+    display: flex;
+    gap: 20px;
+  }
+  &__item {
+    padding: 10px 16px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-family: v.$font-manrope;
+    font-weight: 700;
+    font-size: 16px;
+    color: v.$color-white;
+  }
+  &__text {
+    font-family: v.$font-dyna;
+    font-weight: 700;
+    font-size: 80px;
+    color: v.$color-white;
+  }
+}

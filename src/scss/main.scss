@@ -1,0 +1,6 @@
+// * Це головний sass/scss файл проекту
+// * імпортуйте сюди всі інші ваші файли sass/scss
+@forward "./reset.scss";
+@forward "./base.scss";
+@forward "./header.scss";
+@forward "./section-emloyee.scss";
