@@ -1,0 +1,53 @@
+@use "variables" as v;
+.footer {
+  background-color: v.$color-black;
+  padding: 78px 0 30px;
+  &__top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    padding: 42px 137px;
+    border: 1px solid #f2f2f2;
+    border-radius: 139px;
+    margin-bottom: 163px;
+    &--txt {
+      display: flex;
+      flex-direction: column;
+      gap: 17px;
+    }
+    &--title {
+      font-family: v.$font-dyna;
+      font-weight: 700;
+      font-size: 48px;
+      color: v.$color-white;
+    }
+    &--book {
+      font-family: v.$font-manrope;
+      font-weight: 500;
+      font-size: 24px;
+      color: v.$color-white;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+  }
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    align-items: center;
+    &--icon {
+      display: flex;
+      gap: 34px;
+      align-items: center;
+    }
+    &--copyright {
+        font-family: v.$font-manrope;
+      font-weight: 500;
+      font-size: 16px;
+      color: v.$color-white;
+    }
+  }
+}

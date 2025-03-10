@@ -1,0 +1,11 @@
+@use "variables" as v;
+.minimalizm {
+  background: linear-gradient(225deg, #ffee32 0%, #d6d6d6 100%);
+  padding: 394px 0 119px;
+  &__text {
+    font-family: v.$font-dyna;
+    font-weight: 700;
+    font-size: 80px;
+    color: v.$color-white;
+  }
+}
