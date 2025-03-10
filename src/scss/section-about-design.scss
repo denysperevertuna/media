@@ -1,0 +1,12 @@
+@use "variables" as v;
+.about-design {
+  background-image: url(../img/de);
+  &__text {
+    font-family: v.$font-dyna;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    color: v.$color-white;
+    padding: 303px 0 323px;
+  }
+}

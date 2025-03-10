@@ -1,0 +1,38 @@
+@use "variables" as v;
+.graphic-design {
+  background-color: v.$color-black;
+  padding: 82px 0 138px;
+  &__title {
+    font-family: v.$font-dyna;
+    font-weight: 700;
+    font-size: 80px;
+    color: v.$color-white;
+    margin-bottom: 38px;
+  }
+&__relative{
+    position: relative;
+    &--first{
+        margin-bottom: 26px;
+        position: relative;
+    }
+}
+  &__absolute-item{
+    position: absolute;
+    top: 16%;
+    right: 37%;
+    &--butterfly{
+        position: absolute;
+        top: 27%;
+        left: 32%;
+    }
+    &--asterix {
+        position: absolute;
+        top: 22%;
+        left: 27%;
+    }
+}
+  &__flex {
+    display: flex;
+    gap: 26px;
+  }
+}

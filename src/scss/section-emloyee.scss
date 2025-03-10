@@ -1,6 +1,7 @@
 @use "variables" as v;
 .employee {
     display: flex;
+    align-items: center;
   background-color: v.$color-black;
   &__introduce {
     padding: 101px 0;
