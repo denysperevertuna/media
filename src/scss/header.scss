@@ -4,16 +4,22 @@
   position: sticky;
   top: 0;
   z-index: 100;
- 
+
   &__wraper {
     padding: 18px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: v.$media-medium){
+      padding: 18px 34px;
+    }
   }
   &__navigation {
     display: flex;
     gap: 20px;
+    @media screen and (max-width: v.$media-medium) {
+      display: none;
+    }
   }
   &__item {
     padding: 10px 16px;
@@ -27,6 +33,12 @@
     font-weight: 700;
     font-size: 16px;
     color: v.$color-white;
+  }
+  &__medium {
+    display: none;
+    @media screen and (max-width: v.$media-medium) {
+      display: inline-block;
+    }
   }
   &__text {
     font-family: v.$font-dyna;

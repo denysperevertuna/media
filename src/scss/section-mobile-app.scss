@@ -2,14 +2,47 @@
 .mobile-app {
   background-color: v.$color-black-grey;
   padding: 85px 0;
+  @media screen and (max-width:v.$media-medium){
+  padding: 52px 34px 122px;    
+  }
   &__card {
     padding: 24px 20px;
     background-color: v.$color-white;
     border-radius: 24px;
     margin-bottom: 64px;
+    @media screen and (max-width: v.$media-medium) {
+      margin-bottom: 102px;      
+    }
+  }
+  &__image-wrapper {
+    position: relative;
   }
   &__image {
+    width: 100%;
     margin-bottom: 20px;
+  }
+  &__image-arrow {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    width: 56px;
+    height: 56px;
+    @media screen and (max-width: v.$media-medium) {
+      position: absolute;
+      top: 5%;
+      right: 8%;
+    }
+    &--media {
+      display: none;
+      @media screen and (max-width: v.$media-medium) {
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 56px;
+        height: 56px;
+      }
+    }
   }
   &__application {
     font-family: v.$font-dyna;
@@ -29,6 +62,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
+    @media screen and (max-width: v.$media-medium) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
     &--card {
       padding: 20px;
       background-color: v.$color-white;
@@ -47,6 +85,11 @@
       font-weight: 500;
       font-size: 16px;
       color: v.$color-black;
+    }
+  }
+  &__medium {
+    @media screen and (max-width: v.$media-medium) {
+      display: none;
     }
   }
 }

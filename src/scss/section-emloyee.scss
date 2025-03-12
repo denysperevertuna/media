@@ -1,13 +1,23 @@
 @use "variables" as v;
 .employee {
-    display: flex;
-    align-items: center;
   background-color: v.$color-black;
+  background-image: url(../img/endles.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  @media screen and (max-width:v.$media-medium) {
+    background-image: url(../img/endles-medium.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
   &__introduce {
     padding: 101px 0;
     display: flex;
     flex-direction: column;
     gap: 40px;
+    @media screen and (max-width: v.$media-medium){
+     padding: 101px 34px;
+    }
   }
   &__name {
     font-family: v.$font-dyna;
@@ -42,5 +52,8 @@
     font-weight: 700;
     font-size: 16px;
     color: v.$color-white;
+  }
+  &__endles {
+
   }
 }

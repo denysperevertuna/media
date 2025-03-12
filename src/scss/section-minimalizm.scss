@@ -2,6 +2,9 @@
 .minimalizm {
   background: linear-gradient(225deg, #ffee32 0%, #d6d6d6 100%);
   padding: 394px 0 119px;
+  @media screen and (max-width: v.$media-medium) {
+    padding: 179px 34px 130px;
+  }
   &__text {
     font-family: v.$font-dyna;
     font-weight: 700;

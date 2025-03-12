@@ -2,6 +2,9 @@
 .graphic-design {
   background-color: v.$color-black;
   padding: 82px 0 138px;
+  @media screen and (max-width: v.$media-medium) {
+    padding: 82px 34px 129px;
+  }
   &__title {
     font-family: v.$font-dyna;
     font-weight: 700;
@@ -18,21 +21,42 @@
 }
   &__absolute-item{
     position: absolute;
-    top: 16%;
+    top: 21%;
     right: 37%;
+    @media screen and (max-width: v.$media-medium) {
+      position: absolute;
+      top: 21%;
+      right: 33%;
+      width: 227px;
+      height: 227px;
+    }
     &--butterfly{
         position: absolute;
         top: 27%;
         left: 32%;
+        @media screen and (max-width:v.$media-medium) {
+          position: absolute;
+          width: 147px;
+          height: 151px;
+        }
     }
     &--asterix {
         position: absolute;
         top: 22%;
         left: 27%;
+        @media screen and (max-width: v.$media-medium) {
+         position: absolute;
+         left: 23%;
+          width: 183px;
+          height: 177px;          
+        }
     }
 }
   &__flex {
     display: flex;
     gap: 26px;
+  }
+  &__image{
+    width: 100%;
   }
 }
