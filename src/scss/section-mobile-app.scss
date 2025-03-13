@@ -2,8 +2,11 @@
 .mobile-app {
   background-color: v.$color-black-grey;
   padding: 85px 0;
-  @media screen and (max-width:v.$media-medium){
-  padding: 52px 34px 122px;    
+  @media screen and (max-width: v.$media-medium) {
+    padding: 52px 34px 122px;
+  }
+  @media screen and (max-width: v.$media-small) {
+    padding: 52px 16px 85px;
   }
   &__card {
     padding: 24px 20px;
@@ -11,7 +14,17 @@
     border-radius: 24px;
     margin-bottom: 64px;
     @media screen and (max-width: v.$media-medium) {
-      margin-bottom: 102px;      
+      margin-bottom: 102px;
+    }
+    @media screen and (max-width: v.$media-small) {
+      padding: 13px;
+      margin-bottom: 63px;
+    }
+    &--small {
+      @media screen  and (max-width: v.$media-small) {
+        display: none;
+      }
+
     }
   }
   &__image-wrapper {
@@ -20,11 +33,16 @@
   &__image {
     width: 100%;
     margin-bottom: 20px;
+    &--small {
+      @media screen and (max-width: v.$media-small) {
+        height: 278px;       
+      }
+    }
   }
   &__image-arrow {
     position: absolute;
-    top: 3%;
-    right: 3%;
+    top: 5%;
+    right: 6%;
     width: 56px;
     height: 56px;
     @media screen and (max-width: v.$media-medium) {
@@ -67,6 +85,10 @@
       grid-template-columns: 1fr 1fr;
       gap: 40px;
     }
+    @media screen and (max-width: v.$media-small) {
+    display: grid;
+    grid-template-columns: 1fr;      
+    }
     &--card {
       padding: 20px;
       background-color: v.$color-white;
@@ -85,6 +107,9 @@
       font-weight: 500;
       font-size: 16px;
       color: v.$color-black;
+      @media screen and (max-width:v.$media-small) {
+        font-size: 15px;
+      }
     }
   }
   &__medium {
@@ -92,4 +117,5 @@
       display: none;
     }
   }
+  
 }

@@ -4,10 +4,13 @@
   background-image: url(../img/endles.svg);
   background-repeat: no-repeat;
   background-position: right;
-  @media screen and (max-width:v.$media-medium) {
+  @media screen and (max-width: v.$media-medium) {
     background-image: url(../img/endles-medium.svg);
     background-position: right;
     background-repeat: no-repeat;
+  }
+  @media screen and (max-width: v.$media-small) {
+    background-image: url(../img/endles-small.svg);
   }
 
   &__introduce {
@@ -15,8 +18,11 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    @media screen and (max-width: v.$media-medium){
-     padding: 101px 34px;
+    @media screen and (max-width: v.$media-medium) {
+      padding: 101px 34px;
+    }
+    @media screen and (max-width: v.$media-small) {
+      padding: 72px 16px 76px;
     }
   }
   &__name {
@@ -24,6 +30,10 @@
     font-weight: 700;
     font-size: 48px;
     color: #faeb49;
+    @media screen and (max-width: v.$media-small) {
+      font-weight: 700;
+      font-size: 36px;
+    }
   }
   &__about {
     max-width: 524px;
@@ -31,10 +41,17 @@
     font-weight: 500;
     font-size: 16px;
     color: v.$color-white;
+    @media screen and (max-width: v.$media-small) {
+      font-weight: 500;
+      font-size: 15px;
+    }
   }
   &__achievements {
     display: flex;
     gap: 96px;
+    @media screen and (max-width: v.$media-small) {
+      gap: 14px;
+    }
   }
   &__achievements--flex {
     display: flex;
@@ -46,14 +63,14 @@
     font-weight: 700;
     font-size: 48px;
     color: v.$color-white;
+    @media screen and (max-width: v.$media-small) {
+      font-size: 36px;
+    }
   }
   &__achievements--text {
     font-family: v.$font-manrope;
     font-weight: 700;
     font-size: 16px;
     color: v.$color-white;
-  }
-  &__endles {
-
   }
 }

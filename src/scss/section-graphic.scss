@@ -5,21 +5,28 @@
   @media screen and (max-width: v.$media-medium) {
     padding: 82px 34px 129px;
   }
+  @media screen and (max-width: v.$media-small) {
+    padding: 58px 16px 93px;
+  }
   &__title {
     font-family: v.$font-dyna;
     font-weight: 700;
     font-size: 80px;
     color: v.$color-white;
     margin-bottom: 38px;
-  }
-&__relative{
-    position: relative;
-    &--first{
-        margin-bottom: 26px;
-        position: relative;
+    @media screen and (max-width: v.$media-small) {
+      font-size: 36px;
+      margin-bottom: 28px;
     }
-}
-  &__absolute-item{
+  }
+  &__relative {
+    position: relative;
+    &--first {
+      margin-bottom: 26px;
+      position: relative;
+    }
+  }
+  &__absolute-item {
     position: absolute;
     top: 21%;
     right: 37%;
@@ -30,33 +37,61 @@
       width: 227px;
       height: 227px;
     }
-    &--butterfly{
+    @media screen and (max-width: v.$media-small) {
+      width: 172px;
+      height: 172px;
+      position: absolute;
+      top: 23%;
+      right: 24%;
+    }
+    &--butterfly {
+      position: absolute;
+      top: 27%;
+      left: 32%;
+      @media screen and (max-width: v.$media-medium) {
         position: absolute;
-        top: 27%;
-        left: 32%;
-        @media screen and (max-width:v.$media-medium) {
-          position: absolute;
-          width: 147px;
-          height: 151px;
-        }
+        top: 32%;
+        width: 147px;
+        height: 151px;
+      }
+      @media screen and (max-width: v.$media-small) {
+        width: 134px;
+        height: 137px;
+      }
     }
     &--asterix {
+      position: absolute;
+      top: 22%;
+      left: 27%;
+      @media screen and (max-width: v.$media-medium) {
         position: absolute;
-        top: 22%;
-        left: 27%;
-        @media screen and (max-width: v.$media-medium) {
-         position: absolute;
-         left: 23%;
-          width: 183px;
-          height: 177px;          
-        }
+        left: 23%;
+        width: 183px;
+        height: 177px;
+      }
+      @media screen and (max-width: v.$media-small) {
+        width: 148px;
+        height: 143px;
+        position: absolute;
+        top: 27%;
+        left: 29%;
+      }
     }
-}
+  }
   &__flex {
     display: flex;
     gap: 26px;
+    @media screen and (max-width: v.$media-small) {
+      flex-direction: column;
+      gap: 32px;
+    }
   }
-  &__image{
+
+  &__image {
     width: 100%;
+
+    @media screen and (max-width: v.$media-small) {
+      height: 325px;
+    }
   }
 }
