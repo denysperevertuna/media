@@ -50,11 +50,14 @@
       left: 32%;
       @media screen and (max-width: v.$media-medium) {
         position: absolute;
-        top: 32%;
+        top: 19%;
+        left: 29%;
         width: 147px;
         height: 151px;
       }
       @media screen and (max-width: v.$media-small) {
+        top: 32%;
+        left: 29%;
         width: 134px;
         height: 137px;
       }
@@ -89,6 +92,15 @@
 
   &__image {
     width: 100%;
+    &--first {
+      width: 100%;
+      @media screen and (max-width: v.$media-small) {
+        height: 325px;
+      }
+    }
+    @media screen and (max-width: v.$media-medium) {
+      height: 325px;
+    }
 
     @media screen and (max-width: v.$media-small) {
       height: 325px;

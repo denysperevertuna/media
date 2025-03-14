@@ -45,6 +45,9 @@
       font-weight: 500;
       font-size: 15px;
     }
+    @media screen and (max-width: v.$media-small) {
+      max-width: 342px;
+    }
   }
   &__achievements {
     display: flex;
