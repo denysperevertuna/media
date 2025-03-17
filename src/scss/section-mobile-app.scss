@@ -3,10 +3,10 @@
   background-color: v.$color-black-grey;
   padding: 85px 0;
   @media screen and (max-width: v.$media-medium) {
-    padding: 52px 34px 122px;
+    padding: 52px 0 122px;
   }
   @media screen and (max-width: v.$media-small) {
-    padding: 52px 16px 85px;
+    padding: 52px 0 85px;
   }
   &__card {
     padding: 24px 20px;

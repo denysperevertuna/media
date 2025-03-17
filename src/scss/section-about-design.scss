@@ -9,10 +9,10 @@
     color: v.$color-white;
     padding: 303px 0 323px;
     @media screen and (max-width: v.$media-medium) {
-    padding: 274px 32px 294px;      
+    padding: 274px 0 294px;      
     }
     @media screen and (max-width: v.$media-small) {
-     padding: 180px 16px 173px;
+     padding: 180px 0 173px;
       font-size: 24px;      
     }
   }

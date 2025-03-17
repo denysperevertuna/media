@@ -19,10 +19,10 @@
     flex-direction: column;
     gap: 40px;
     @media screen and (max-width: v.$media-medium) {
-      padding: 101px 34px;
+      padding: 101px 0 34px;
     }
     @media screen and (max-width: v.$media-small) {
-      padding: 72px 16px 76px;
+      padding: 72px 0 76px;
     }
   }
   &__name {

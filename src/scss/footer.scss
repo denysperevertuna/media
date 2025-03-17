@@ -3,10 +3,10 @@
   background-color: v.$color-black;
   padding: 78px 0 30px;
   @media screen and (max-width: v.$media-medium) {
-    padding: 92px 32px 35px;
+    padding: 92px 0 35px;
   }
   @media screen and (max-width: v.$media-small) {
-    padding: 53px 16px 40px;
+    padding: 53px 0 40px;
   }
   &__top {
     display: flex;
@@ -39,6 +39,9 @@
       font-weight: 700;
       font-size: 48px;
       color: v.$color-white;
+      @media screen and (max-width: v.$media-medium) {
+        white-space: nowrap;
+      }
       @media screen and (max-width: v.$media-small) {
         font-size: 20px;
         white-space: nowrap;

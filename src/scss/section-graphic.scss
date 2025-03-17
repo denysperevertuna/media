@@ -3,10 +3,10 @@
   background-color: v.$color-black;
   padding: 82px 0 138px;
   @media screen and (max-width: v.$media-medium) {
-    padding: 82px 34px 129px;
+    padding: 82px 0 129px;
   }
   @media screen and (max-width: v.$media-small) {
-    padding: 58px 16px 93px;
+    padding: 58px 0 93px;
   }
   &__title {
     font-family: v.$font-dyna;
@@ -50,7 +50,7 @@
       left: 32%;
       @media screen and (max-width: v.$media-medium) {
         position: absolute;
-        top: 19%;
+        top: 28%;
         left: 29%;
         width: 147px;
         height: 151px;
