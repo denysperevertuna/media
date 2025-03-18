@@ -1,7 +1,9 @@
 @use "variables" as v;
 .minimalizm {
   background: linear-gradient(225deg, #ffee32 0%, #d6d6d6 100%);
-  padding: 394px 0 119px;
+  height: 800px;
+  padding-bottom: 119px;
+  display: flex;align-items: end;
   @media screen and (max-width: v.$media-medium) {
     padding: 179px 0 130px;
   }

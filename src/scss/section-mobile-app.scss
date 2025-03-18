@@ -1,7 +1,10 @@
 @use "variables" as v;
 .mobile-app {
   background-color: v.$color-black-grey;
-  padding: 85px 0;
+  height: 1460px;
+  display: grid;
+  place-items: center;
+  // padding: 85px 0;
   @media screen and (max-width: v.$media-medium) {
     padding: 52px 0 122px;
   }
@@ -75,6 +78,7 @@
     font-size: 16px;
     color: v.$color-black;
     max-width: 580px;
+    line-height: normal;
   }
   &__grid {
     display: grid;

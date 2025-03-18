@@ -14,9 +14,10 @@
   }
 
   &__introduce {
-    padding: 101px 0;
+    height: 470px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 40px;
     @media screen and (max-width: v.$media-medium) {
       padding: 101px 0 34px;

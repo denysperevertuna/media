@@ -1,16 +1,17 @@
 @use "variables" as v;
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
 }
 .container {
-  max-width: 1050px;
-  margin: 0 auto;
-  @media screen and (max-width: v.$media-medium) {
-    max-width: 703px;
-  }
-  @media screen and (max-width: v.$media-small) {
-    max-width: 343px;
-  }
+    max-width: 1050px;
+    margin: 0 auto;
+    @media screen and (max-width: v.$media-medium) {
+        max-width: 703px;
+    }
+    @media screen and (max-width: v.$media-small) {
+        max-width: 343px;
+    }
 }

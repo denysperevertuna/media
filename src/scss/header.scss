@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media screen and (max-width: v.$media-medium){
+    @media screen and (max-width: v.$media-medium) {
       padding: 18px 34px;
     }
   }
@@ -33,6 +33,9 @@
     font-weight: 700;
     font-size: 16px;
     color: v.$color-white;
+    &:hover {
+      box-shadow: 0px 0px 0px 1px white inset;
+    }
   }
   &__medium {
     display: none;

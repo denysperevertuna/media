@@ -28,12 +28,11 @@
   }
   &__absolute-item {
     position: absolute;
-    top: 21%;
-    right: 37%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     @media screen and (max-width: v.$media-medium) {
-      position: absolute;
-      top: 21%;
-      right: 33%;
+ 
       width: 227px;
       height: 227px;
     }
@@ -41,34 +40,31 @@
       width: 172px;
       height: 172px;
       position: absolute;
-      top: 23%;
-      right: 24%;
+    
     }
     &--butterfly {
       position: absolute;
-      top: 27%;
-      left: 32%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       @media screen and (max-width: v.$media-medium) {
-        position: absolute;
-        top: 28%;
-        left: 29%;
+    
         width: 147px;
         height: 151px;
       }
       @media screen and (max-width: v.$media-small) {
-        top: 32%;
-        left: 29%;
+     
         width: 134px;
         height: 137px;
       }
     }
     &--asterix {
       position: absolute;
-      top: 22%;
-      left: 27%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       @media screen and (max-width: v.$media-medium) {
-        position: absolute;
-        left: 23%;
+    
         width: 183px;
         height: 177px;
       }
@@ -76,8 +72,7 @@
         width: 148px;
         height: 143px;
         position: absolute;
-        top: 27%;
-        left: 29%;
+       
       }
     }
   }
