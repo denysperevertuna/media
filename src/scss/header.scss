@@ -6,13 +6,13 @@
   z-index: 100;
 
   &__wraper {
-    padding: 18px 0;
+    padding: 18px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media screen and (max-width: v.$media-medium){
-      padding: 18px 34px;
-    }
+  @media screen and (max-width: v.$media-small) {
+    padding: 18px 10px;
+  }
   }
   &__navigation {
     display: flex;

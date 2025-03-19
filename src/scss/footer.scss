@@ -1,12 +1,12 @@
 @use "variables" as v;
 .footer {
   background-color: v.$color-black;
-  padding: 78px 0 30px;
+  padding: 78px 10px 30px;
   @media screen and (max-width: v.$media-medium) {
-    padding: 92px 32px 35px;
+    padding: 92px 0 35px;
   }
   @media screen and (max-width: v.$media-small) {
-    padding: 53px 16px 40px;
+    padding: 53px 0 40px;
   }
   &__top {
     display: flex;
@@ -17,14 +17,21 @@
     border: 1px solid #f2f2f2;
     border-radius: 139px;
     margin-bottom: 163px;
+    max-width: 914px;
+    @media screen and (max-width: v.$media-small) {
+      max-width: 343px;
+    }
+
     @media screen and (max-width: v.$media-medium) {
       padding: 21px 37px;
       margin-bottom: 60px;
+      white-space: wrap;
     }
     @media screen and (max-width: v.$media-small) {
       gap: 20px;
       padding: 10.5px 33.5px;
       margin-bottom: 116px;
+      white-space: wrap;
     }
     &--txt {
       display: flex;
@@ -39,9 +46,10 @@
       font-weight: 700;
       font-size: 48px;
       color: v.$color-white;
+      white-space: nowrap;
       @media screen and (max-width: v.$media-small) {
         font-size: 20px;
-        white-space: nowrap;
+        white-space: wrap;
       }
     }
     &--book {
@@ -79,7 +87,15 @@
     }
   }
   &__sun {
+    background-image: url(../img/sun.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 108px;
+    height: 108px;
     @media screen and (max-width: v.$media-small) {
+      background-image: url(../img/sun-small.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
       width: 53px;
       height: 52px;
     }
