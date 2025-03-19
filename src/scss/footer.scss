@@ -13,7 +13,7 @@
     justify-content: center;
     align-items: center;
     gap: 45px;
-    padding: 42px 137px;
+    padding: 42px 0;
     border: 1px solid #f2f2f2;
     border-radius: 139px;
     margin-bottom: 163px;
@@ -23,13 +23,13 @@
     }
 
     @media screen and (max-width: v.$media-medium) {
-      padding: 21px 37px;
+      padding: 21px 0;
       margin-bottom: 60px;
       white-space: wrap;
     }
     @media screen and (max-width: v.$media-small) {
       gap: 20px;
-      padding: 10.5px 33.5px;
+      padding: 10.5px 0;
       margin-bottom: 116px;
       white-space: wrap;
     }
